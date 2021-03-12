@@ -28,9 +28,11 @@ int main(int argc, char** argv)
 {
 
   if(argc != 1){
-        cerr << "ERROR: not Argument allowed"  <<endl;
+        cerr << "ERROR: no arguments allowed"  <<endl;
         cerr << "Data should be provided via standard input"  <<endl;
-        cerr << "Use, for example, by cat data.txt | ./pdf_analyzer \n" << "Exit!!" <<endl;
+        cerr << "Use, for example, by cat data.txt | ./pdf_analyzer \n" <<endl;
+        cerr << "First column must be coordinate, and the second must be probability."  <<endl;
+        cerr << "The probability may not be normalized."  <<endl;
         return -1;
   }
 
