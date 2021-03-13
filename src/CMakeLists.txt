@@ -25,7 +25,7 @@ endif()
 
 include_directories(~/src/cxx-prettyprint)
 include_directories(${PRETTYPRINT})
-find_package(Boost  REQUIRED COMPONENTS program_options)
+find_package(Boost)
 include_directories(${Boost_INCLUDE_DIRS})
 
 add_executable(pdf_anlyzer  pdf_anlyzer.cpp)
